@@ -120,8 +120,8 @@ hr {
 }
 
 .content img {
-    height: 20rem;
-    width: 24rem;
+    height: 50%;
+    width: 47.5%;
     padding-left: 3rem;
 }
 
@@ -137,11 +137,29 @@ hr {
 
 .box-two {
     display: flex;
+    flex-direction: row-reverse;
     justify-content: center;
     width: 50%;
+    margin-top: 2.5rem;
+}
+
+.box-two img {
+    padding: 0;
+    padding-right: 3rem;
 }
 
 .box-two-text {
+    width: 100%;
+}
+
+.box-three {
+    display: flex;
+    justify-content: center;
+    width: 50%;
+    margin-top: 2.5rem;
+}
+
+.box-three-text {
     width: 100%;
 }
 
