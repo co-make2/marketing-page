@@ -19,6 +19,10 @@ time, mark, audio, video {
 	vertical-align: baseline;
 }
 
+.container {
+    width: 100%;
+}
+
 header {
     display: flex;
     flex-direction: row;
@@ -67,99 +71,133 @@ header nav a {
 }
 
 .hero-text h1 {
-    font-size: 4rem;
+    font-size: 3rem;
     color: white;
 }
 
-.about {
+.hero-banner h2 {
+    font-size: 3rem;
+    color: white;
+    margin-top: 0.5rem;
+}
+
+.hero-banner button {
+	background-color:#7892c2;
+	border-radius:10px;
+	border:1px solid #4e6096;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:19px;
+	padding:12px 37px;
+	text-decoration:none;
+    text-shadow:0px 1px 0px #283966;
+    margin-top: 1.5rem;
+}
+
+hr {
+    margin-top: 2rem;
+    width: 55%;
+}
+
+.content {
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin-top: 3rem;
 }
 
-.mission {
-    padding-top: 3rem;
-    text-align: center;
-    width: 100%;
-    background-color: #CCE4F2;
+.content h2 {
+    font-size: 2rem;
+    padding-bottom: 2rem;
+}
+
+.content p {
+    font-size: 1.3rem;
+}
+
+.content img {
+    height: 50%;
+    width: 47.5%;
+    padding-left: 3rem;
+}
+
+.box-one {
     display: flex;
     justify-content: center;
-}
-
-.mission-text {
     width: 50%;
 }
 
-.mission h2 {
-    font-size: 2.5rem;
-}
-
-.mission-hr {
-    width: 13%;
-    margin-top: 1rem;
-}
-
-.mission p {
-    margin-top: 2rem;
-    margin-bottom: 2.3rem;
-    font-size: 1.4rem;
-}
-
-.team {
-    justify-content: center;
-    align-items: center;
-    margin-top: 3rem;
-    text-align: center;
+.box-one-text {
     width: 100%;
 }
 
-.team h2 {
-    font-size: 2.5rem;
+.box-two {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    width: 50%;
+    margin-top: 2.5rem;
 }
 
-.team-members {
+.box-two img {
+    padding: 0;
+    padding-right: 3rem;
+}
+
+.box-two-text {
+    width: 100%;
+}
+
+.box-three {
     display: flex;
-    align-items: center;
+    justify-content: center;
+    width: 50%;
+    margin-top: 2.5rem;
+}
+
+.box-three-text {
+    width: 100%;
+}
+
+.bottom-container {
+    display: flex;
     flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+    color: black;
 }
 
-.project-lead {
-    margin-top: 3rem;
-    margin-bottom: 6rem;
+.bottom-container h1 {
+    font-size: 2.3rem;
+    margin-bottom: 1.5rem;
 }
 
-.group-1 {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    padding-left: 1.5%;
-    width: 40%;
+.bottom-container h3 {
+    font-size: 1.5rem;
 }
 
-.group-2 {
-    display: flex;
-    flex-direction: row;
-    margin-top: 7rem;
-    justify-content: space-between;
-    width: 40%;
-}
-
-.member img {
-    height: 10rem;
+.bottom-container button {
+    background-color:#7892c2;
+	border-radius:10px;
+	border:1px solid #4e6096;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:19px;
+	padding:12px 37px;
+	text-decoration:none;
+    text-shadow:0px 1px 0px #283966;
+    margin-top: 1.6rem;
+    justify-self: center;
     width: 10rem;
 }
-
-.member h3 {
-    font-size: 2rem;
-    margin-top: 1rem;
-}
-
-.member p {
-    font-size: 1.4rem;
-    margin-top: 1rem;
-}
-
 
 footer {
     display: flex;
@@ -172,6 +210,7 @@ footer {
     height: 4rem;
     font-size: 1.5rem;
 }
+
 
 @media (max-width: 500px) {
     .container {
@@ -201,24 +240,15 @@ footer {
         font-size: 1.4rem;
     }
 
-    .mission-text {
-        width: 80%;
+    .box-one {
+        width: 90%;
     }
 
-    .group-1 {
-        width: 100%;
-        padding-left: 0%;
+    .box-two {
+        width: 90%;
     }
 
-    .group-2 {
-        width: 100%;
-    }
-
-    .member h3{
-        font-size: 1.4rem;
-    }
-
-    .member p{
-        font-size: 1.2rem;
+    .box-three {
+        width: 90%;
     }
 }
