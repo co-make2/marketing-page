@@ -124,10 +124,6 @@ header nav a {
     flex-direction: column;
 }
 
-.member:nth-child(2) {
-    padding-left: 22rem;
-}
-
 .project-lead {
     margin-top: 3rem;
     margin-bottom: 6rem;
@@ -136,14 +132,16 @@ header nav a {
 .group-1 {
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-between;
+    width: 40%;
 }
 
 .group-2 {
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
     margin-top: 7rem;
+    justify-content: space-between;
+    width: 40%;
 }
 
 .member img {
@@ -154,6 +152,7 @@ header nav a {
 .member h3 {
     font-size: 2rem;
     margin-top: 1rem;
+    font-weight: bold;
 }
 
 .member p {
@@ -172,4 +171,53 @@ footer {
     color: black;
     height: 4rem;
     font-size: 1.5rem;
+}
+
+@media (max-width: 500px) {
+    .container {
+        max-width: 500px;
+        font-size: 1rem;
+    }
+
+    header {
+        max-width: 500px;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    header nav {
+        display: flex;
+        position: relative;
+        width: 100%;
+        margin: 0 auto;
+        justify-content: center;
+        padding-top: 2%;
+    }
+
+    header nav a {
+        margin: 0;
+        padding-left: 1rem;
+        font-size: 1.4rem;
+    }
+
+    .mission-text {
+        width: 80%;
+    }
+
+    .group-1 {
+        width: 100%;
+    }
+
+    .group-2 {
+        width: 100%;
+    }
+
+    .member h3{
+        font-size: 1.4rem;
+    }
+
+    .member p{
+        font-size: 1.2rem;
+    }
 }
