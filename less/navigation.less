@@ -2,6 +2,14 @@ nav {
     margin-right: 10%;
     padding-top: 1rem;
 
+    @media @mobile {
+        display: flex;
+        position: relative;
+        width: 100%;
+        margin: 0 auto;
+        justify-content: center;
+        padding-top: 2%;
+    }
 
     a {
     text-decoration: none;
@@ -9,5 +17,11 @@ nav {
     font-size: 1.8rem;
     margin-left: 8rem;
     margin-top: 0.5rem;
+
+    @media @mobile {
+        margin: 0;
+        padding-left: 1rem;
+        font-size: 1.4rem;
+    }
     }
 }

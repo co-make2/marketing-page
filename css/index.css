@@ -126,6 +126,16 @@ nav {
   margin-right: 10%;
   padding-top: 1rem;
 }
+@media ( max-width: 500px ) {
+  nav {
+    display: flex;
+    position: relative;
+    width: 100%;
+    margin: 0 auto;
+    justify-content: center;
+    padding-top: 2%;
+  }
+}
 nav a {
   text-decoration: none;
   color: black;
@@ -133,8 +143,32 @@ nav a {
   margin-left: 8rem;
   margin-top: 0.5rem;
 }
+@media ( max-width: 500px ) {
+  nav a {
+    margin: 0;
+    padding-left: 1rem;
+    font-size: 1.4rem;
+  }
+}
+footer {
+  display: flex;
+  margin-top: 2rem;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  background-color: #78A7C2;
+  color: black;
+  height: 4rem;
+  font-size: 1.5rem;
+}
 .container {
   width: 100%;
+}
+@media ( max-width: 500px ) {
+  .container {
+    max-width: 500px;
+    font-size: 1rem;
+  }
 }
 header {
   display: flex;
@@ -142,6 +176,14 @@ header {
   margin-top: 2vh;
   width: 100%;
   justify-content: space-between;
+}
+@media ( max-width: 500px ) {
+  header {
+    max-width: 500px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
 }
 .title-header {
   font-size: 2.8rem;
@@ -220,6 +262,11 @@ hr {
   justify-content: center;
   width: 50%;
 }
+@media ( max-width: 500px ) {
+  .box-one {
+    width: 90%;
+  }
+}
 .box-one-text {
   width: 100%;
 }
@@ -229,6 +276,11 @@ hr {
   justify-content: center;
   width: 50%;
   margin-top: 2.5rem;
+}
+@media ( max-width: 500px ) {
+  .box-two {
+    width: 90%;
+  }
 }
 .box-two img {
   padding: 0;
@@ -242,6 +294,11 @@ hr {
   justify-content: center;
   width: 50%;
   margin-top: 2.5rem;
+}
+@media ( max-width: 500px ) {
+  .box-three {
+    width: 90%;
+  }
 }
 .box-three-text {
   width: 100%;
@@ -278,17 +335,6 @@ hr {
   justify-self: center;
   width: 10rem;
 }
-footer {
-  display: flex;
-  margin-top: 2rem;
-  text-align: center;
-  align-items: center;
-  justify-content: center;
-  background-color: #78A7C2;
-  color: black;
-  height: 4rem;
-  font-size: 1.5rem;
-}
 .about {
   display: flex;
   flex-direction: column;
@@ -303,20 +349,25 @@ footer {
   display: flex;
   justify-content: center;
 }
-.mission-text {
-  width: 50%;
-}
 .mission h2 {
   font-size: 2.5rem;
-}
-.mission-hr {
-  width: 13%;
-  margin-top: 1rem;
 }
 .mission p {
   margin-top: 2rem;
   margin-bottom: 2.3rem;
   font-size: 1.4rem;
+}
+.mission-text {
+  width: 50%;
+}
+@media ( max-width: 500px ) {
+  .mission-text {
+    width: 80%;
+  }
+}
+.mission-hr {
+  width: 13%;
+  margin-top: 1rem;
 }
 .team {
   justify-content: center;
@@ -344,12 +395,24 @@ footer {
   padding-left: 1.5%;
   width: 40%;
 }
+@media ( max-width: 500px ) {
+  .group-1 {
+    width: 100%;
+    padding-left: 0%;
+  }
+}
 .group-2 {
   display: flex;
   flex-direction: row;
   margin-top: 7rem;
   justify-content: space-between;
   width: 40%;
+}
+@media ( max-width: 500px ) {
+  .group-2 {
+    width: 100%;
+    padding-left: 0%;
+  }
 }
 .member img {
   height: 10rem;
@@ -359,7 +422,17 @@ footer {
   font-size: 2rem;
   margin-top: 1rem;
 }
+@media ( max-width: 500px ) {
+  .member h3 {
+    font-size: 1.4rem;
+  }
+}
 .member p {
   font-size: 1.4rem;
   margin-top: 1rem;
+}
+@media ( max-width: 500px ) {
+  .member p {
+    font-size: 1.2rem;
+  }
 }

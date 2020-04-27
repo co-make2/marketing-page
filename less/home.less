@@ -1,5 +1,10 @@
 .container {
     width: 100%;
+
+    @media @mobile {
+        max-width: 500px;
+        font-size: 1rem;
+    }
 }
 
 header {
@@ -8,6 +13,13 @@ header {
     margin-top: 2vh;
     width: 100%;
     justify-content: space-between;
+
+    @media @mobile {
+        max-width: 500px;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
 }
 
 .title-header {
@@ -86,6 +98,10 @@ hr {
     display: flex;
     justify-content: center;
     width: 50%;
+
+    @media @mobile {
+        width: 90%;
+    }
 }
 
 .box-one-text {
@@ -98,6 +114,10 @@ hr {
     justify-content: center;
     width: 50%;
     margin-top: 2.5rem;
+
+    @media @mobile {
+        width: 90%;
+    }
 }
 
 .box-two img {
@@ -114,6 +134,10 @@ hr {
     justify-content: center;
     width: 50%;
     margin-top: 2.5rem;
+
+    @media @mobile {
+        width: 90%;
+    }
 }
 
 .box-three-text {
@@ -142,16 +166,4 @@ hr {
     button {
         .button-mixin();
     }
-}
-
-footer {
-    display: flex;
-    margin-top: 2rem;
-    text-align: center;
-    align-items: center;
-    justify-content: center;
-    background-color: #78A7C2;
-    color: black;
-    height: 4rem;
-    font-size: 1.5rem;
 }

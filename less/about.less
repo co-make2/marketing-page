@@ -12,14 +12,24 @@
     background-color: #CCE4F2;
     display: flex;
     justify-content: center;
+
+    h2 {
+        font-size: 2.5rem;
+    }
+
+    p {
+        margin-top: 2rem;
+        margin-bottom: 2.3rem;
+        font-size: 1.4rem;
+    }
 }
 
 .mission-text {
     width: 50%;
-}
 
-.mission h2 {
-    font-size: 2.5rem;
+    @media @mobile {
+        width: 80%;
+    }
 }
 
 .mission-hr {
@@ -27,11 +37,6 @@
     margin-top: 1rem;
 }
 
-.mission p {
-    margin-top: 2rem;
-    margin-bottom: 2.3rem;
-    font-size: 1.4rem;
-}
 
 .team {
     justify-content: center;
@@ -39,10 +44,11 @@
     margin-top: 3rem;
     text-align: center;
     width: 100%;
-}
 
-.team h2 {
-    font-size: 2.5rem;
+
+    h2 {
+        font-size: 2.5rem;
+    }
 }
 
 .team-members {
@@ -62,6 +68,11 @@
     justify-content: space-between;
     padding-left: 1.5%;
     width: 40%;
+
+    @media @mobile {
+        width: 100%;
+        padding-left: 0%;
+    }
 }
 
 .group-2 {
@@ -70,19 +81,34 @@
     margin-top: 7rem;
     justify-content: space-between;
     width: 40%;
+
+    @media @mobile {
+        width: 100%;
+        padding-left: 0%;
+    }
 }
 
-.member img {
-    height: 10rem;
-    width: 10rem;
-}
+.member {
+    img {
+        height: 10rem;
+        width: 10rem;
+    }
 
-.member h3 {
-    font-size: 2rem;
-    margin-top: 1rem;
-}
+    h3 {
+        font-size: 2rem;
+        margin-top: 1rem;
 
-.member p {
-    font-size: 1.4rem;
-    margin-top: 1rem;
+        @media @mobile {
+           font-size: 1.4rem;
+        }
+    }
+
+    p {
+        font-size: 1.4rem;
+        margin-top: 1rem;
+
+        @media @mobile {
+            font-size: 1.2rem;
+        }
+    }
 }
