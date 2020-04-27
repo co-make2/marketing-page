@@ -76,12 +76,18 @@ header nav a {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: #CCE4F2;
 }
 
 .mission {
-    margin-top: 3rem;
+    padding-top: 3rem;
     text-align: center;
+    width: 100%;
+    background-color: #CCE4F2;
+    display: flex;
+    justify-content: center;
+}
+
+.mission-text {
     width: 50%;
 }
 
@@ -98,4 +104,72 @@ header nav a {
     margin-top: 2rem;
     margin-bottom: 2.3rem;
     font-size: 1.4rem;
+}
+
+.team {
+    justify-content: center;
+    align-items: center;
+    margin-top: 3rem;
+    text-align: center;
+    width: 100%;
+}
+
+.team h2 {
+    font-size: 2.5rem;
+}
+
+.team-members {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.member:nth-child(2) {
+    padding-left: 22rem;
+}
+
+.project-lead {
+    margin-top: 3rem;
+    margin-bottom: 6rem;
+}
+
+.group-1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.group-2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 7rem;
+}
+
+.member img {
+    height: 10rem;
+    width: 10rem;
+}
+
+.member h3 {
+    font-size: 2rem;
+    margin-top: 1rem;
+}
+
+.member p {
+    font-size: 1.4rem;
+    margin-top: 1rem;
+}
+
+
+footer {
+    display: flex;
+    margin-top: 2rem;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    background-color: #78A7C2;
+    color: black;
+    height: 4rem;
+    font-size: 1.5rem;
 }
