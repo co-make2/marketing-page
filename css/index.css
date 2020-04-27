@@ -54,7 +54,7 @@ header nav a {
 
 .hero-banner {
     margin-top: 2%;
-    background-image: url(../images/option1.jpeg);
+    background-image: linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3) ), url(../images/option1.jpeg);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -176,7 +176,6 @@ hr {
 .bottom-container h1 {
     font-size: 2.3rem;
     margin-bottom: 1.5rem;
-    margin-top: 2rem;
 }
 
 .bottom-container h3 {
@@ -195,7 +194,7 @@ hr {
 	padding:12px 37px;
 	text-decoration:none;
     text-shadow:0px 1px 0px #283966;
-    margin-top: 1.5rem;
+    margin-top: 1.6rem;
     justify-self: center;
     width: 10rem;
 }
@@ -216,6 +215,7 @@ footer {
 @media (max-width: 500px) {
     .container {
         max-width: 500px;
+        font-size: 1rem;
     }
 
     header {
