@@ -126,7 +126,7 @@ nav {
   margin-right: 10%;
   padding-top: 1rem;
 }
-@media ( max-width: 500px ) {
+@media ( max-width: 800px ) {
   nav {
     display: flex;
     position: relative;
@@ -136,7 +136,7 @@ nav {
     padding-top: 2%;
   }
 }
-@media ( max-width: 800px ) {
+@media ( max-width: 500px ) {
   nav {
     display: flex;
     position: relative;
@@ -154,22 +154,22 @@ nav a {
   margin-top: 0.5rem;
   font-family: 'Lato', sans-serif;
 }
-nav a:hover {
-  color: burlywood;
-}
 @media ( max-width: 800px ) {
-  nav {
+  nav a {
     margin: 0;
     padding-left: 3rem;
     font-size: 1.8rem;
   }
 }
 @media ( max-width: 500px ) {
-  nav {
+  nav a {
     margin: 0;
     padding-left: 1rem;
     font-size: 1.4rem;
   }
+}
+nav a:hover {
+  color: burlywood;
 }
 footer {
   display: flex;
