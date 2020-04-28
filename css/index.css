@@ -142,6 +142,7 @@ nav a {
   font-size: 1.8rem;
   margin-left: 8rem;
   margin-top: 0.5rem;
+  font-family: 'Lato', sans-serif;
 }
 @media ( max-width: 500px ) {
   nav a {
@@ -149,6 +150,9 @@ nav a {
     padding-left: 1rem;
     font-size: 1.4rem;
   }
+}
+nav .title-header {
+  font-family: 'Josefin Sans', sans-serif;
 }
 footer {
   display: flex;
@@ -163,6 +167,7 @@ footer {
 }
 .container {
   width: 100%;
+  font-family: 'Roboto', sans-serif;
 }
 @media ( max-width: 500px ) {
   .container {
@@ -184,6 +189,9 @@ header {
     flex-direction: column;
     text-align: center;
   }
+}
+header .title-header {
+  font-family: 'Josefin Sans', sans-serif;
 }
 .title-header {
   font-size: 2.8rem;
